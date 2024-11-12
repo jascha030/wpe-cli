@@ -1,0 +1,19 @@
+includes:
+  - 'vendor-bin/phpstan/vendor/phpstan/phpstan-phpunit/extension.neon'
+  - 'vendor-bin/phpstan/vendor/phpstan/phpstan-phpunit/rules.neon'
+parameters:
+  level: max
+  paths:
+    - src
+    - tests
+  bootstrapFiles:
+    - 'tools/phpunit.phar'
+    - 'vendor-bin/php-cs-fixer/vendor/autoload.php'
+  excludePaths:
+    analyzeAndScan:
+      - 'tests/*/Fixtures/*'
+      - 'vendor-bin/php-cs-fixer/vendor/*'
+      - 'config/*'
+  tmpDir: '.var/cache/phpstan'
+  editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+
