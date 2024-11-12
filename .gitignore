@@ -1,0 +1,13 @@
+### Gitignore
+
+## Folders
+/.vscode/
+/.idea/
+/.var/
+
+## Global
+vendor/
+
+*.DS_Store
+**.cache
+
