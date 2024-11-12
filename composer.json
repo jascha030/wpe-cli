@@ -13,7 +13,8 @@
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.8",
-        "symfony/var-dumper": "^7.1"
+        "symfony/var-dumper": "^7.1",
+        "ergebnis/composer-normalize": "^2.44"
     },
     "autoload": {
         "psr-4": {
@@ -28,7 +29,8 @@
     ],
     "config": {
         "allow-plugins": {
-            "bamarni/composer-bin-plugin": true
+            "bamarni/composer-bin-plugin": true,
+            "ergebnis/composer-normalize": true
         },
         "platform": {
             "php": "8.2"
@@ -38,9 +40,17 @@
         "bamarni-bin": {
             "bin-links": true,
             "forward-command": true
+        },
+        "composer-normalize": {
+            "indent-size": 4,
+            "indent-style": "space"
         }
     },
     "scripts": {
+        "format:php": "@php-cs-fixer fix --config=.php-cs-fixer.dist.php",
+        "format:php:test": "@php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run",
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer",
+        "phpstan": "./vendor/bin/phpstan",
         "phpunit": "./tools/phpunit.phar",
         "test": [
             "@tools:install",
