@@ -1,0 +1,10 @@
+{
+    "repositories": [{
+        "type": "composer",
+        "url": "https://composer.sbdev.nl"
+    }],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "socialbrothers/php-cs-fixer-config": "^1.0"
+    }
+}
