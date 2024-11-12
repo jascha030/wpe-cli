@@ -5,9 +5,11 @@
 /.idea/
 /.var/
 
+/tools/*
+!/tools/phive
+
 ## Global
 vendor/
 
 *.DS_Store
 **.cache
-
