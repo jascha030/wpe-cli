@@ -2,5 +2,11 @@
     "require-dev": {
         "phpstan/phpstan": "^2.0",
         "phpstan/phpstan-phpunit": "^2.0"
+    },
+    "extra": {
+        "bamarni-bin": {
+            "forward-command": false,
+            "bin-links": false
+        }
     }
 }
