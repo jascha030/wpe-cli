@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of the WP Brothers WordPress Back-end PHP-CS-Fixer Config package.
- *
- * (c) WP Brothers <wordpress@socialbrothers.nl>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 declare(strict_types=1);
 
 use PhpCsFixer\Finder;
@@ -42,14 +33,15 @@ $finder = Finder::create()
 
 return (new Config(
     Config::PHP_82,
-    <<<'EOF'
-        This file is part of the WP Brothers WordPress Back-end PHP-CS-Fixer Config package.
-
-        (c) WP Brothers <wordpress@socialbrothers.nl>
-
-        For the full copyright and license information, please view the LICENSE
-        file that was distributed with this source code.
-        EOF,
+    null,
+    /* <<<'EOF' */
+    /*     This file is part of the WP Brothers WordPress Back-end PHP-CS-Fixer Config package. */
+    /*  */
+    /*     (c) WP Brothers <wordpress@socialbrothers.nl> */
+    /*  */
+    /*     For the full copyright and license information, please view the LICENSE */
+    /*     file that was distributed with this source code. */
+    /*     EOF, */
 ))
     ->setFinder($finder)
     ->setCacheFile($cacheFile);
