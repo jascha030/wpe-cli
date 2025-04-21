@@ -4,6 +4,7 @@
 /.vscode/
 /.idea/
 /.var/
+/test-output/
 
 /tools/*
 !/tools/phive
