@@ -1,14 +1,14 @@
 /.github                export-ignore
 /.idea                  export-ignore
-/.vscode                export-ignore
 /.var                   export-ignore
-/tools/*                binary
+/.vscode                export-ignore
 /tools                  export-ignore
+/tools/*                binary
 /vendor-bin             export-ignore
 
 /.gitattributes         export-ignore
 /.gitignore             export-ignore
 /.php-cs-fixer.dist.php export-ignore
+/composer.lock          export-ignore
 /phpstan.neon.dist      export-ignore
 /phpunit.xml.dist       export-ignore
-/composer.lock          export-ignore
