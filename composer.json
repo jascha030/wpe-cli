@@ -15,7 +15,10 @@
         "symfony/console": "^7.2",
         "guzzlehttp/guzzle": "^7.9",
         "psr/container": "^1.1||^2.0",
-        "wp-cli/wp-cli-bundle": "^2.11"
+        "wp-cli/wp-cli-bundle": "^2.11",
+        "symfony/process": "^7.2",
+        "phpoption/phpoption": "^1.9",
+        "symfony/filesystem": "^7.2"
     },
     "require-dev": {
         "bamarni/composer-bin-plugin": "^1.8",
