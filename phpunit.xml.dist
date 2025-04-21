@@ -2,8 +2,10 @@
 <phpunit
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="./tools/phpunit.xsd"
+  backupGlobals="false"
   beStrictAboutOutputDuringTests="true"
   bootstrap="tests/bootstrap.php"
+  cacheResult="true"
   colors="true"
   failOnRisky="true"
   failOnWarning="true"
@@ -12,6 +14,12 @@
   requireCoverageMetadata="true"
   beStrictAboutCoverageMetadata="true"
 >
+  <coverage>
+    <report>
+      <clover outputFile=".var/cache/phpunit/cov.xml" />
+      <text outputFile="php://stdout" />
+    </report>
+  </coverage>
   <testsuites>
     <testsuite name="default">
       <directory>tests</directory>
